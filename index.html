@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#18191A] font-sans">
+<body class="bg-[#18191A] font-sans overflow-hidden">
     <header>
         <nav class="px-5 h-14 flex flex-row items-center bg-[#242526]">
 
@@ -128,7 +128,7 @@
 
         </section>
         <!-- main content -->
-        <section class="main_content w-6/12 h-[calc(100vh-56px)] mt-7">
+        <section class="main_content w-6/12 h-[calc(100vh-56px)] mt-7 overflow-y-auto">
             <!-- stories  -->
             <div class="stories w-full h-[250px] flex flex-row gap-2 justify-between relative">
                 <!-- story 1 -->
@@ -177,11 +177,13 @@
                         class="absolute w-11 h-11 bg-[#323131] p-2 rounded-full top-1/2 -translate-y-1/2 right-4 z-50 hover:bg-[#525355]">
                 </button>
             </div>
-            <!-- Add-post container -->
+            <!-- Add-post -->
             <div class="add_post_container bg-[#242526] mt-5 mx-10  px-3 rounded-lg ">
                 <!-- post top -->
                 <div class="flex flex-row border-b-[1px] border-white/30 py-3 gap-2">
-                    <a href=""><img src="./assets/image/avator.png" alt="" class="w-10 h-10 rounded-full"></a>
+                    <a href="">
+                        <img src="./assets/image/avator.png" alt="" class="w-10 h-10 rounded-full">
+                    </a>
                     <input type="text" name="" id="" placeholder="What's on your mind, Al? "
                         class="p-2 w-full rounded-3xl cursor-pointer hover:bg-[#4E4F50] bg-[#414142] font-medium">
                 </div>
@@ -205,7 +207,130 @@
                     </button>
                 </div>
             </div>
+            <!-- post_container -->
+            <div class="bg-[#242526] mt-5 mx-10  py-3 rounded-lg mb-10">
+                <!-- post-header -->
+                <div class="flex flex-row justify-between items-center px-3">
+                    <!-- left -->
+                    <div class=" flex flex-row gap-2">
+                        <a href=""><img src="./assets/image/avator.png" class="w-10 h-10 rounded-full" alt=""></a>
+                        <div class=" text-white font-semibold">
+                            <a href="">
+                                <h3>Nahid Al Noman</h3>
+                            </a>
+                            <span class="flex flex-row items-center gap-1 text-[#B0B3B8]">
+                                <a href="">
+                                    <p>3h .</p>
+                                </a>
+                                <img src="./assets/icons/world.png" class="w-4 h-4" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="">
+                        <button class="p-2.5 hover:bg-[#3A3B3C] rounded-full">
+                            <img src="./assets/icons/dots.png" class="w-5 h-5 rotate-90 " alt="">
+                        </button>
+                        <button class="p-2.5 hover:bg-[#3A3B3C] rounded-full">
+                            <img src="./assets/icons/close.png" class="w-5 h-5 " alt="">
+                        </button>
+                    </div>
+                </div>
+                <!-- post-image -->
+                <a href="">
+                    <img src="./assets/image/post_photo.jpg" class="w-full mt-2" alt="">
+                </a>
+                <!-- reactions -->
+                <div class=" text-[#B8BBBF] flex flex-row justify-between items-center py-2 px-3">
+                    <div class="flex flex-row justify-between items-center gap-2">
+                        <div class="flex flex-row justify-start cursor-pointer ">
+                            <button class="relative group">
+                                <img src="./assets/icons/like.png" class="h-7 w-7" alt="">
+                                <div
+                                    class="bg-[#c6c6c6] w-[180px] p-2 rounded-xl absolute hidden group-hover:block text-black">
+                                    <h4 class="font-bold text-left">Like</h4>
+                                    <p class="text-left">
+                                        Saheb Ali <br>
+                                        Shafiul Alam <br>
+                                        Saheb Ali <br>
+                                        Shafiul Alam
+                                    </p>
+                                </div>
+                            </button>
+                            <button class="relative group">
+                                <img src="./assets/icons/love.png" class="h-7 w-7" alt="">
+                                <div
+                                    class="bg-[#c6c6c6] w-[180px] p-2 rounded-xl absolute hidden group-hover:block text-black">
+                                    <h4 class="font-bold text-left">Love</h4>
+                                    <p class="text-left">
+                                        Saheb Ali <br>
+                                        Shafiul Alam <br>
+                                        Saheb Ali <br>
+                                        Shafiul Alam
+                                    </p>
+                                </div>
+                            </button>
+                            <button class="relative group">
+                                <img src="./assets/icons/care.png" class="h-7 w-7" alt="">
+                                <div
+                                    class="bg-[#c6c6c6] w-[180px] p-2 rounded-xl absolute hidden group-hover:block text-black">
+                                    <h4 class="font-bold text-left">Care</h4>
+                                    <p class="text-left">
+                                        Saheb Ali <br>
+                                        Shafiul Alam <br>
+                                        Saheb Ali <br>
+                                        Shafiul Alam
+                                    </p>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="relative group">
+                            <div
+                                class="bg-[#c6c6c6] w-[180px] p-2 rounded-xl absolute hidden group-hover:block text-black top-7">
+                                <h4 class="font-bold text-left"></h4>
+                                <p class="text-left">
+                                    Saheb Ali <br>
+                                    Shafiul Alam <br>
+                                    Saheb Ali <br>
+                                    Shafiul Alam
+                                </p>
+                            </div>
+                            <p class="underline cursor-pointer text-lg ">Saheb Ali, Shafiul Alam and 15 others</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-1 relative group">
+                        <div
+                            class="bg-[#c6c6c6] w-[180px] p-2 rounded-xl absolute hidden group-hover:block top-7 right-2 text-black">
+                            <h4 class="font-bold text-left">Share</h4>
+                            <p class="text-left">
+                                Saheb Ali, <br>
+                                Shafiul Alam
+                            </p>
+                        </div>
+                        <p class="hover:underline">2</p>
+                        <img src="./assets/icons/comment.png" class="h-4 w-4" alt="">
+                    </div>
+                </div>
 
+                <div
+                    class=" py-1 text-[#B8BBBF] text-lg font-semibold flex flex-row justify-around items-center border-t-[1px] border-white/30">
+                    <div
+                        class="flex flex-row items-center gap-2 px-7 py-1.5 hover:bg-[#3A3B3C] cursor-pointer rounded-lg">
+                        <img src="./assets/icons/like_react.png" class="w-8 h-8" alt="">
+                        <p>Like</p>
+                    </div>
+                    <div
+                        class="flex flex-row items-center gap-2 px-7 py-2 hover:bg-[#3A3B3C] cursor-pointer rounded-lg">
+                        <img src="./assets/icons/comment.png" class="w-6 h-6" alt="">
+                        <p>Comment</p>
+                    </div>
+                    <div
+                        class="flex flex-row items-center gap-2 px-7 py-2 hover:bg-[#3A3B3C] cursor-pointer rounded-lg">
+                        <img src="./assets/icons/share.png" class="w-6 h-6" alt="">
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
 
         </section>
         <!-- contact side -->
