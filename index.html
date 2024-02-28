@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -94,7 +95,7 @@
     </header>
     <main class="flex flex-row gap-8">
         <!-- left menubar -->
-        <section class="left_menubar bg-[#18191A] w-3/12 h-[calc(100vh-56px)] flex flex-col gap-1 ml-2 mt-4">
+        <section class=" bg-[#18191A] w-3/12 h-[calc(100vh-56px)] flex flex-col gap-1 ml-2 mt-4">
             <!-- list 1 -->
             <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
                 <img src="./assets/image/avator.png" class="w-8 h-8 rounded-full" alt="">
@@ -128,7 +129,7 @@
 
         </section>
         <!-- main content -->
-        <section class="main_content w-6/12 h-[calc(100vh-56px)] mt-7 overflow-y-auto">
+        <section class=" w-6/12 h-[calc(100vh-56px)] mt-7 overflow-y-auto   no-scrollbar">
             <!-- stories  -->
             <div class="stories w-full h-[250px] flex flex-row gap-2 justify-between relative">
                 <!-- story 1 -->
@@ -295,7 +296,7 @@
                                     Shafiul Alam
                                 </p>
                             </div>
-                            <p class="underline cursor-pointer text-lg ">Saheb Ali, Shafiul Alam and 15 others</p>
+                            <p class="hover:underline cursor-pointer text-lg ">Saheb Ali, Shafiul Alam and 15 others</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center gap-1 relative group">
@@ -313,9 +314,24 @@
                 </div>
 
                 <div
-                    class=" py-1 text-[#B8BBBF] text-lg font-semibold flex flex-row justify-around items-center border-t-[1px] border-white/30">
+                    class=" py-1 text-[#B8BBBF] text-lg font-semibold flex flex-row justify-around items-center border-t-[1px] border-white/30 mx-3 ">
                     <div
-                        class="flex flex-row items-center gap-2 px-7 py-1.5 hover:bg-[#3A3B3C] cursor-pointer rounded-lg">
+                        class="flex flex-row items-center gap-2 px-7 py-1.5 hover:bg-[#3A3B3C] cursor-pointer rounded-lg relative group">
+                        <div
+                            class="group-hover:flex hidden absolute bottom-12 -left-5 -right-40 bg-[#242526] duration-300 rounded-3xl">
+                            <img src="./assets/icons/like.gif"
+                                class="hover:scale-150  w-12 h-12 rounded-full duration-500 bg-transparent" alt="">
+                            <img src="./assets/icons/love.gif"
+                                class="hover:scale-150 w-12 h-12 rounded-full duration-500 bg-transparent" alt="">
+                            <img src="./assets/icons/haha.gif"
+                                class="hover:scale-150 w-12 h-12 rounded-full duration-500 bg-transparent" alt="">
+                            <img src="./assets/icons/sad.gif"
+                                class="hover:scale-150 w-12 h-12 rounded-full duration-500 bg-transparent" alt="">
+                            <img src="./assets/icons/wow.gif"
+                                class="hover:scale-150 w-12 h-12 rounded-full duration-500 bg-transparent" alt="">
+                            <img src="./assets/icons/angry.gif"
+                                class="hover:scale-150 w-12 h-12 rounded-full duration-500 bg-transparent" alt="">
+                        </div>
                         <img src="./assets/icons/like_react.png" class="w-8 h-8" alt="">
                         <p>Like</p>
                     </div>
@@ -334,10 +350,100 @@
 
         </section>
         <!-- contact side -->
-        <section class="contact bg-[#F0F2F5] w-3/12 h-[calc(100vh-56px)]">
+        <section
+            class=" bg-[#18191A] w-3/12 h-[calc(100vh-56px)] flex flex-col gap-1 ml-2 mt-4 overflow-auto no-scrollbar">
+            <!-- list 1 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/image/avator.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Al Emran</p>
+            </a>
+            <!-- list 2 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/contacts.png" class="w-8 h-8 rounded-full bg-transparent" alt="">
+                <p class="font-semibold text-white">Friends</p>
+            </a>
+            <!-- list 3 -->
+            <a href="./group.html" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/groups_active.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Groups</p>
+            </a>
+            <!-- list 4 -->
+            <a href="./video.html" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/video_active.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Video</p>
+            </a>
+            <!-- list 5 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/clock.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Memories</p>
+            </a>
+            <!-- list 6 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/bookmark.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Saved</p>
+            </a>
+            <!-- list 1 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/image/avator.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Al Emran</p>
+            </a>
+            <!-- list 2 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/contacts.png" class="w-8 h-8 rounded-full bg-transparent" alt="">
+                <p class="font-semibold text-white">Friends</p>
+            </a>
+            <!-- list 3 -->
+            <a href="./group.html" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/groups_active.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Groups</p>
+            </a>
+            <!-- list 4 -->
+            <a href="./video.html" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/video_active.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Video</p>
+            </a>
+            <!-- list 5 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/clock.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Memories</p>
+            </a>
+            <!-- list 6 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/bookmark.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Saved</p>
+            </a>
+            <!-- list 1 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/image/avator.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Al Emran</p>
+            </a>
+            <!-- list 2 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/contacts.png" class="w-8 h-8 rounded-full bg-transparent" alt="">
+                <p class="font-semibold text-white">Friends</p>
+            </a>
+            <!-- list 3 -->
+            <a href="./group.html" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/groups_active.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Groups</p>
+            </a>
+            <!-- list 4 -->
+            <a href="./video.html" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/video_active.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Video</p>
+            </a>
+            <!-- list 5 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/clock.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Memories</p>
+            </a>
+            <!-- list 6 -->
+            <a href="#" class="flex gap-3 items-center py-2 pl-3 hover:bg-[#3A3B3C] rounded-lg">
+                <img src="./assets/icons/bookmark.png" class="w-8 h-8 rounded-full" alt="">
+                <p class="font-semibold text-white">Saved</p>
+            </a>
 
         </section>
     </main>
 </body>
-
 </html>
