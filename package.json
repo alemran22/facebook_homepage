@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.8",
+    "tailwindcss": "^4.0.8"
+  },
+  "name": "facebook_homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": " npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemran22/facebook_homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alemran22/facebook_homepage/issues"
+  },
+  "homepage": "https://github.com/alemran22/facebook_homepage#readme"
+}
